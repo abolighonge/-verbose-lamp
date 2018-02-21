@@ -1,27 +1,43 @@
 <html>
-    <head> 
-        <title>  Web Project </title>
-        <link href="style.css" rel="stylesheet" type="text/css">
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="cal.css" type="text/css">
     </head>
     <body>
-        <header>
+        <h1> My calculator</h1>
+        <p id="calculator"></p>
+        <script src="main.js" type="application/javascript"></script>
+        <form name="cal">
+            <input name="display" type="display" value="">
+            <div class="digit">
+                
+            <input type="button"  id="num0"   value="0"  onclick="run0()">
+             <input type="button"  id="num1"   value="1" onclick="run1()">
+             <input type="button"   id="num2" value="2"  onclick="run2()">
+             <input type="button"   id="num3" value="3"  onclick="run3()">
+             <input type="button"   id="num4"  value="4"  onclick="run4()">
+             <input type="button"   id="num5"  value="5"  onclick="run5()">
+             <input type="button"    id="num6"  value="6" onclick="run6()">
+             <input type="button"    id="num7"  value="7" onclick="run7()">
+             <input type="button"    id="num8"   value="8" onclick="run8()">
+             <input type="button"     id="num9"  value="9" onclick="run9()">
+                 
+            <div class="operators"> 
+                
+            
+             <input type="button" id="plus" value="+" onclick="runPlus()">
+             <input type="button"  id= "sub" value="-" onclick="runSub()">
+             <input type="button"  id="Div" value="/" onclick="runDiv()">
+             <input type="button"  id="Mul" value="*" onclick="runMul()">
+            
+             <input type="button"  id="Reset " value="Reset" onclick="runSet()">
         
-        <div class="row">
-        
-        <ul class ="main-nav">
-            <li class="active"><a href="">HOME</a></li>
-            <li class="active"><a href="">ABOUT</a></li>
-            <li class="active"><a href="">CONTACT</a></li>
-            <li class="active"><a href="">FAQ</a></li>
-           </ul>
-           </div>
-            <div class="aboli">
-                <h1> WHAT ARE YOU WAITING FOR?</h1>
-            <div class="button">
-                <a href=""  class="btn btnone">News</a>
-                <a href="" class="btn btntwo">videos</a>
+             <input type="button"  id="clear" value="c" onclick="runC()">
+            <input type="button"  id="equal" value="="  onclick="runEqual">
                 </div>
             </div>
-        </header>
+            
+            
+        </form>
     </body>
 </html>
