@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="cal.css" type="text/css">
+    </head>
+    <body>
+        <h1> My calculator</h1>
+       <input type="text" id="n1">
+        <input type="text" id="n2">
+        
+        <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        </select>
+        <button onclick="Demo()">=</button>
+        <input type="text" id="result">
+        
+        <script>
+            function Demo(){
+                
+                var n1,n2,oper;
+                 
+                n1=parseInt(document.getElementById("n1").value);
+                n2=parseInt(document.getElementById("n2").value);
+                oper=document.getElementById("operator").value;
+                
+                if(oper === '+')
+                   {
+                   
+                   document.getElementById('result').value= n1+n2;
+                
+                   }
+                 if(oper === '-')
+                   {
+                   
+                   document.getElementById('result').value= n1-n2;
+                
+                   }
+                 if(oper === '*')
+                   {
+                   
+                   document.getElementById('result').value= n1*n2;
+                
+                   }
+                 if(oper === '/')
+                   {
+                   
+                   document.getElementById('result').value= n1/n2;
+                
+                   }
+            }
+        
+        
+        </script>
+     </body>
+</html>
