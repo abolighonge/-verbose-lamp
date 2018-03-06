@@ -1,0 +1,37 @@
+package movieLia;
+
+import java.util.Scanner;
+
+public class MyFirst {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		System.out.println("Enter the name of the Genre: ");
+		String genre = scan.next();
+		
+	 	 switch (genre)
+		 {
+		 case "comedy" : System.out.println("This Is Us\nShameless\nWhen We First Met \nFriends\nThe Untitled Deadpool Sequel\nThe Office");
+		    break;
+		 case  "horror": System.out.println("The Shape of Water\n The Cloverfield Paradox\n Venom\n The Ritual\n The Walking Dead\n The Walking Dead");
+		    break;
+		 case "roamance" : System.out.println(" Grey's Anatomy\n Vikings\n Call Me by Your Name\nThe Big Bang Theory\nThe Good Place\nHow I Met Your Mother");
+		    break;
+		 case "action" : System.out.println(" Black Panther\n Game of Thrones\n Star Trek: Discovery\nThe Untitled Deadpool Sequel\n Thor: Ragnarok\n Agents of S.H.I.E.L.D. ");
+		    break;
+		 case "animation" : System.out.println(" Incredibles 2\nCoco\n Peter Rabbit\n The Emoji Movie\nRick and Morty\nFamily Guy ");
+		    break;
+		 case "drama" : System.out.println(" Altered Carbon\nThree Billboards Outside Ebbing, Missouri\nThe Greatest Showman\nArrow\nStranger Things\nWonder");
+		    break;
+		 case "crime" : System.out.println(" Homeland\n Murder on the Orient Express\n Peaky Blinders\n American Crime Story\nRiverdale\n Lucifer ");
+		    break;
+		 case "superhero" : System.out.println(" Avengers: Infinity War\n The Flash\nJustice League\n Wonder Woman \n X-Men: Dark Phoenix\n Supergirl");
+		    break;
+		    default : System.out.println("Invalid Input");
+		    
+		   }
+		}
+}
+	
+	
+	
